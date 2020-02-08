@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Webpage</title>
+
+    <style type="text/css">
+
+        #headers{
+            color: coral;
+            font-size: 250%;
+            background-color: green;
+        }
+
+        .lists{
+            color: orangered;
+            font-size: 150%;
+            background-color: gray;
+            text-decoration: underline black;
+
+        }
+        .linkers{
+            background-color: yellow;
+        }
+        #floater1{
+            background-color: coral;
+            width: 33%;
+            float: left;
+        }
+        #floater2{
+            background-color: aqua;
+            width: 50%;
+            float: right;
+        }
+        .clear-float{
+            clear: both;
+        }
+        #square1{
+            background-color: red;
+            border: black 1px solid;
+            border-radius: 50%;
+        }
+        #square2{
+            background-color: green;
+            border: darkgreen 5px dashed;
+        }
+        #square3{
+            background-color: blue;
+            border: purple 5px dot-dash;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin: 40px;
+            border-color: greenyellow goldenrod purple gold;
+            border-radius: 20px;
+        }
+        #purple-text{
+            color: purple;
+        }
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+    <body>
+
+    <div id="headers">
+        <h1>H1 header-THIS IS A BIG HEADER</h1>
+        <h2>H2 header-THIS is quite a big header</h2>
+        <h3>H3 header-</h3>
+        <h4>H4 header</h4>
+        <h5>H5 header</h5>
+        <h6>H6 header</h6>
+    </div>
+   <hr>
+
+    <br>
+
+    <div id="text type">
+        <h1>Text Types</h1>
+<!--        Old School-->
+        <p>Here is some <b>Bold</b> text. </p>
+
+<!--        New School-->
+        <p>Here is some <strong>Bold</strong> text. </p>
+
+<!--        Old school-->
+        <p>Here is some <i>Italic</i> text. </p>
+
+<!--        New School-->
+        <p>Here is some <em>Italic </em> text. </p>
+
+        <p>Here is some <sup>superscript</sup> text. </p>
+
+        <p>Here is some <sub>subscript</sub> text. </p>
+
+        <p>Here is some <del>deleted</del> text. </p>
+
+        <p>Here is some <ins>underlined</ins> text. </p>
+    </div>
+            <hr>
+            <br>
+
+    <div id="Unordered Lists" class="lists">
+        <h1>Languages I Know:</h1>
+            <ul>
+                <li><em>English</em></li>
+                <li><strong>HTML</strong></li>
+                <li><del>CSS</del></li>
+                <li><ins>Javascript</ins></li>
+            </ul>
+    </div>
+
+        <hr>
+        <br>
+
+    <div id="Ordered Lists" class="lists">
+        <h1>Ordered Lists</h1>
+        <h2>Schools</h2>
+            <ol>
+                <li>Jefferson</li>
+                <li>Emerson</li>
+                <li>Maine East</li>
+                <li>US Navy Hospital Corps School</li>
+                <li>US Field Medical Service School</li>
+                <li>Loyola University</li>
+                <li>University of Phoenix</li>
+                <li>US Navy Senior Enlisted Academy</li>
+                <li>CodeUp</li>
+            </ol>
+        <hr>
+        <br>
+        <h1>Ordered Lists Roman Numerals</h1>
+        <h2>Schools</h2>
+        <ol type="I">
+            <li>Jefferson</li>
+            <li>Emerson</li>
+            <li>Maine East</li>
+            <li>US Navy Hospital Corps School</li>
+            <li>US Field Medical Service School</li>
+            <li>Loyola University</li>
+            <li>University of Phoenix</li>
+            <li>US Navy Senior Enlisted Academy</li>
+            <li>CodeUp</li>
+        </ol>
+        <hr>
+        <br>
+        <h1>Ordered Lists Reversed Alphabet</h1>
+        <h2>Schools</h2>
+        <ol type="A" reversed>
+            <li>Jefferson</li>
+            <li>Emerson</li>
+            <li>Maine East</li>
+            <li>US Navy Hospital Corps School</li>
+            <li>US Field Medical Service School</li>
+            <li>Loyola University</li>
+            <li>University of Phoenix</li>
+            <li>US Navy Senior Enlisted Academy</li>
+            <li>CodeUp</li>
+        </ol>
+    </div>
+
+        <hr>
+
+        <br>
+    <div id="hero1">
+            <H2>Linking images</H2>
+    </div>
+
+    <div>
+            <img src="img/Homer_Simpson_2006.png" alt="Homer Simpson" width="190" align="left">
+<!--            <p>Homer Simpson</p>-->
+    </div>
+
+    <div>
+        <p><strong>Homer Simpson</strong></p>
+    </div>
+
+    <hr>
+
+    <div id="forms">
+
+        <h1>Forms</h1>
+
+        <form>
+
+<!--            text input-->
+
+            <p>Username: <input type="text" placeholder="your username"></p>
+
+<!--            checkbox-->
+
+            <p>Stay logged in: <input type="checkbox" checked></p>
+
+                <p>Under 18: <input type="radio" name="age" value="u18"></p>
+
+                <p>Over 18: <input type="radio" name="age" value="o18"></p>
+
+            <p>Favorite food:
+                    <select>
+                        <option>Pizza</option>
+                        <option>Ice Cream</option>
+                        <option>Cheeseburger</option>
+                    </select>
+            </p>
+            <p><input type="submit" value="Click me!"></p>
+        </form>
+    </div>
+        <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+
+
+    <div id="table">
+
+        <table>
+
+            <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Hockey Team</th>
+                        </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Chicago</td>
+                        <td>Blackhawks</td>
+                    </tr>
+
+                    <tr>
+                        <td>Detroit</td>
+                        <td>Redwings</td>
+                    </tr>
+
+                    <tr>
+                        <td>Colorado</td>
+                        <td>Avalanche</td>
+                    </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <div id="links" class="linkers">
+        <p id="top"><a href="http://www.google.com">Click here to go to google.com</a></p>
+        <p><a href="http://www.wikipedia.org">Wikipedia</a></p>
+        <p><a href="http://www.nhl.com">NHL Homepage</a></p>
+        <p><a href="#headers">Back to the Top</a></p>
+    </div>
+
+    <div id="entities">
+        <h1>Entities examples</h1>
+            <p>The cost is:</p>
+            <ul>
+                <li>&pound;9.99</li>
+                <li>&yen;9.99</li>
+                <li>&euro;9.99</li>
+            </ul>
+    </div>
+
+    <div id="iframes">
+
+        <iframe src="https://https://www.youtube.com/watch?v=lN-4lX0QyZc
+"></iframe>
+
+        <hr>
+        <br>
+
+    </div>
+
+    <div id="inline css">
+
+        <h2>Inline-CSS</h2>
+
+        <h1 style="color:green; font-size: 50%">CSS is cool.</h1>
+        <p style="color:blue; font-size: 200%">The quick brown fox jumped over the lazy dog.</p>
+    </div>
+
+    <h1>Floating</h1>
+
+
+    <div id="floater1">
+        <p>This is box #1.  I am using this as an example to float this box.</p>
+    </div>
+
+    <div id="floater2">
+        <p>This is box #2.  I am using this as an example to float this other box.</p>
+    </div>
+
+    <p class="clear-float">Where will text end up?</p>
+
+    <hr>
+    <br>
+
+    <div id="square1" class="square">
+        <p>SQUARE 1 modified using border-radius</p>
+
+
+    </div>
+    <div id="square2" class="square">
+        <p>SQUARE 2</p>
+
+    </div>
+    <div id="square3" class="square">
+        <P>SQUARE 3. </P>
+
+    </div>
+    <br>
+
+
+    <hr>
+
+<!--    How do you turn the text below "Welcome to my page!" purple?-->
+
+    <h1>Welcome to My Web Page!</h1>
+
+    <p id="purple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur sapien imperdiet, ultrices turpis eget,
+    malesuada dui. Nam nulla risus, placerat nec efficitur at, auctor ut justo. In fringilla felis sit amet arcu tempus
+    aliquet. Curabitur vel feugiat mauris. Fusce porta rutrum pulvinar. Integer varius placerat libero, in cursus odio
+        commodo ac. Quisque fringilla vestibulum euismod. Nullam blandit dui a ex bibendum ornare.</p>
+
+    <p>Nulla quis elit dui. Vivamus at pretium tortor. In at dapibus dui. Suspendisse viverra ultrices molestie. Integer
+    condimentum commodo justo, porta condimentum quam elementum sed. Sed porttitor accumsan cursus. In sem nunc,
+    cursus pretium vestibulum eget, luctus sed mi. Suspendisse potenti. Integer eget molestie felis. Aenean nisi metus,
+    semper nec accumsan in, ultrices ut libero. Vivamus nec iaculis sem. Quisque condimentum nunc nec ultricies
+    imperdiet. Nulla auctor ex vel est cursus placerat. Quisque vitae gravida justo. Cras vitae pharetra nisl, et
+        rutrum diam.</p>
+
+
+    <h2>A Poem by E. E. Cummings</h2>
+
+    <p>un &nbsp;&nbsp;der,<br>
+        a &nbsp; &nbsp; <br>
+        &nbsp;co
+        &nbsp;&nbsp;mo<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;tive&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;&nbsp;pout<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ing<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lets<br>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+</html>
