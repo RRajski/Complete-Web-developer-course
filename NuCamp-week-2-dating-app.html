@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        .fieldset{
+            background: lightyellow;
+            border: 10px solid yellow;
+            margin-bottom: 10px;
+            width: 720px;
+        }
+        .label-text{
+            /*width: 180px;*/
+            display: inline-block;
+            text-align: left;
+
+        }
 
 
 
@@ -18,42 +30,57 @@
 <!--        An img element with id="preview" with the label “Image Preview:”-->
 
 
-        <fieldset id="Face">
-            <legend>Your Face</legend>
-
-
+        <fieldset id="Face" class="fieldset">
+            <legend class="label-text">Your Face</legend>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;Your Image:<label><input type="file" name="avatar" id="avatar"><br>
+                <label>Image Preview:</label><img id="preview">
         </fieldset>
-
-    <!--    Fieldset 1 end-->
-
+        <!--    Fieldset 1 end-->
         <br>
-
         <!--    Fieldset 2 start-->
-<!--        Add a legend tag for the Fieldset saying ‘Your general details’-->
-<!--        input type= "text"  [required] with a name=“name” and id=”name” with the label “Name:”-->
-<!--        input type="radio" (two of these) [required] with name=“gender” but with two different id and values (male and female)-->
-<!--        input type="number" [required] with name=“age” and id=”age” and a label-->
+<!--        Add a legend tag for the Fieldset saying ‘Your general details’ x-->
+<!--        input type= "text"  [required] with a name=“name” and id=”name” with the label “Name:”x-->
+<!--        input type="radio" (two of these) [required] with name=“gender” but with two different id and values (male and female)x-->
+<!--        input type="number" [required] with name=“age” and id=”age” and a labelx-->
 <!--        input type="date" with name=“dob” and id=”dob” and a label-->
 <!--        input type="color" with name=“color” and id=”color” and a label-->
-<!--        select , with 6 option , to handle ‘no selection’ plus 5 different countries-->
+<!--        select , with 6 option , to handle ‘no selection’ plus 5 different countries x-->
 
-        <fieldset id="General-Details">
-            <legend>Your General Details</legend>
-
-
-        </fieldset>
-
+            <fieldset id="General-Details" class="fieldset">
+                <legend class="label-text">Your General Details</legend>
+                <label>Name:</label><input type="text" name="name" id="name">
+                    <br>
+                <label>Gender:</label>  <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                    <br>
+                <label>Age:</label><input type="number" name="age" id="age">
+                    <br>
+                <label>Date of Birth:</label><input type="date">
+                    <br>
+                <label>Favorite Color:</label><input type="color" name="color" id="color">
+                    <br>
+                <label for="Countries">Which Country</label>
+                    <select id="Countries">
+                        <option value="Great Britain">Great Britain</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="United States">United States</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="No Selection">No Selection</option>
+                    </select>
+            </fieldset>
         <!--    Fieldset 2 end-->
-
-        <br>
+                    <br>
 
         <!--    Fieldset 3 start-->
 <!--        Add a legend tag for the Fieldset saying ‘Your Indicators’-->
 <!--        input type="range" min="0" max="100". Use a combination of Label <label> and Span <span> for the indicator text-->
 <!--input type="range" min="0" max="100". Use a combination of Label <label> and Span <span> for the indicator text-->
 
-        <fieldset id="Indicators">
-            <legend>Your Indicators</legend>
+        <fieldset id="Indicators" class="fieldset">
+            <legend class="label-text">Your Indicators</legend>
 
 
         </fieldset>
@@ -69,8 +96,8 @@
 <!--        textarea with name=“address”, id=”address”  20 columns, 3 rows and a label-->
 <!--        input type="checkbox" ... , three of these are needed for the three types of contact method-->
 
-        <fieldset id="Contact-Information">
-            <legend>Your Contact Information</legend>
+        <fieldset id="Contact-Information" class="fieldset">
+            <legend class="label-text">Your Contact Information</legend>
                 <input type="email">
                 <input type="number">
 
