@@ -64,7 +64,7 @@
 
             <fieldset id="General-Details" class="fieldset">
                 <legend class="label-text">Your General Details</legend>
-                <label>Name:</label><input type="text" name="name" id="name">
+                <label>Name:</label><input type="text" name="name" id="name" placeholder="Your full name">
                     <br>
                 <label>Gender:</label>  <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
@@ -121,40 +121,12 @@
             <textarea name="address" id="address" cols="20" rows="3"></textarea>
             <label></label>
             <br>
-<!--
-<!--            <form action="/action_page.php">-->
-<!--                <input type="checkbox" name="answer1" value="Email"-->
-<!--            <input type="checkbox">-->
-<!--            <label for="answer 1">Email</label>-->
-<!--            <label for="answer 2">Whatsapp</label>-->
-<!--            <label for="answer 3">In-app chat</label>-->
-<!--            </form>-->
-            <label>Method to contact you:</label>
-<!--            <form action="/action_page.php">-->
-<!--                <input type="checkbox" name="email" value="email" class="contact">-->
-<!--                <label for="answer1">Email</label><br>-->
-<!--                <input type="checkbox" name="WhatsApp" value="Whatsapp" class="contact">-->
-<!--                <label for="answer2"> Whatsapp</label><br>-->
-<!--                <input type="checkbox" name="In-app chat" value="In-app-chat" class="contact">-->
-<!--                <label for="answer3"> In-app chat</label><br><br>-->
-
-<!--            </form>-->
-
-            <div class="item">
-                <input type="checkbox" id="a">
-                <label for="a"></label>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="b">
-                <!-- depending on width, a linebreak can occur here. -->
-                <label for="b">bgf bh fhg fdg hg dg gfh dfgh</label>
-            </div>
-            <div class="item">
-                <input type="checkbox" id="c">
-                <label for="c">c</label>
-            </div>
-
-
+    <form action="/action_page.php">
+    <label>Method to Contact you:</label>
+        <input type="checkbox" name="answer1" value="Email"><label>Email</label>
+        <input type="checkbox" name="answer2" value="Whatsapp"><label>Whats app</label>
+        <input type="checkbox" name="answer3" value="In-app chat"><label for="answer 3">In-app chat</label>
+    </form>
         </fieldset>
 
         <!--    Fieldset 4 end-->
