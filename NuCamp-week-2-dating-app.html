@@ -14,7 +14,23 @@
             /*width: 180px;*/
             display: inline-block;
             text-align: left;
-
+        }
+        .first-span{
+            background: red;
+            color: white;
+        }
+        .second-span{
+            background: purple;
+            color: white;
+        }
+        span{
+            text-align: center;
+        }
+        #address2{
+            float: left;
+        }
+        .contact{
+            float: left;
         }
 
 
@@ -81,10 +97,9 @@
 
         <fieldset id="Indicators" class="fieldset">
             <legend class="label-text">Your Indicators</legend>
-
-
+            <label>Height:</label><span class="first-span">&nbsp;&nbsp;&nbsp;Short&nbsp;&nbsp;&nbsp;</span><input type="range" min="0" max="100"><span class="second-span">&nbsp;&nbsp;&nbsp;Tall&nbsp;&nbsp;&nbsp;</span><br>
+            <label>Salary:</label><span class="first-span">&nbsp;&nbsp;&nbsp;&nbsp;Poor&nbsp;&nbsp;&nbsp;</span><input type="range" min="0" max="100"><span class="second-span">&nbsp;&nbsp;Rich&nbsp;&nbsp;&nbsp;</span>
         </fieldset>
-
         <!--    Fieldset 3 end-->
 
         <br>
@@ -98,8 +113,46 @@
 
         <fieldset id="Contact-Information" class="fieldset">
             <legend class="label-text">Your Contact Information</legend>
-                <input type="email">
-                <input type="number">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;Email:</label><input type="email" name="email" id="email">
+                <br>
+            <label>&nbsp;&nbsp;Mobile:</label><input type="tel" name="mobile" id="mobile">
+                <br>
+            <label id="address2">Address:</label>
+            <textarea name="address" id="address" cols="20" rows="3"></textarea>
+            <label></label>
+            <br>
+<!--
+<!--            <form action="/action_page.php">-->
+<!--                <input type="checkbox" name="answer1" value="Email"-->
+<!--            <input type="checkbox">-->
+<!--            <label for="answer 1">Email</label>-->
+<!--            <label for="answer 2">Whatsapp</label>-->
+<!--            <label for="answer 3">In-app chat</label>-->
+<!--            </form>-->
+            <label>Method to contact you:</label>
+<!--            <form action="/action_page.php">-->
+<!--                <input type="checkbox" name="email" value="email" class="contact">-->
+<!--                <label for="answer1">Email</label><br>-->
+<!--                <input type="checkbox" name="WhatsApp" value="Whatsapp" class="contact">-->
+<!--                <label for="answer2"> Whatsapp</label><br>-->
+<!--                <input type="checkbox" name="In-app chat" value="In-app-chat" class="contact">-->
+<!--                <label for="answer3"> In-app chat</label><br><br>-->
+
+<!--            </form>-->
+
+            <div class="item">
+                <input type="checkbox" id="a">
+                <label for="a"></label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="b">
+                <!-- depending on width, a linebreak can occur here. -->
+                <label for="b">bgf bh fhg fdg hg dg gfh dfgh</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="c">
+                <label for="c">c</label>
+            </div>
 
 
         </fieldset>
