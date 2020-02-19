@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+<doctype HTML>
+    <body>
+    <style>
+        fieldset {
+            background-color:lightyellow;
+            border:yellow solid 10px;
+            margin-bottom:10px;
+            width:720px;
+        }
+        label text{
+            width:180px;
+            display:inline-block;
+
+            ​
+
+        }
+        ​
+        [type="range"text-align:center]
+    </style>
+    <H1> Please Enter Your Details for Our Dating Website!
+    </H1>
+    <form action="https://learn.nucamp.co/show_everything.php." method"post">
+    <fieldset>
+        <legend>Your Face</legend>
+        <label>your image</label>
+        <input type="file" id="avatar" name="avatar"required><br>
+        <label>Image Preview:</label>
+    </fieldset>
+    <fieldset>
+        <legend> Your General Details</legend>
+        <label>Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name"><br>
+        <label>Gender:<label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br>
+            <label>Age:</label>
+            <input type="text" id="age" name="age"><br>
+            <label>Date of birth:</label>
+            <input type="number" name="date" id="date" placeholder="mm/dd/yyyy"><br>
+            <label>Favorite color:</label>
+            <input type="color" name="color" id="color"><br>
+            <label>Which country:</label>
+            <select>
+                <option value="Blank"></option>
+                <option value="Guyana">Guyana</option>
+                <option value="Trinidad">Trinidad</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="USA">USA</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend> Your Indicators</legend>
+        <label>Height:</label>
+        <span>Short</span>
+        <input type="range" name="height" min="0" max="100">
+        <span>Tall</span><br>
+        <label>Salary:</label>
+        <span>Poor</span>
+        <input type="range" name="salary" min="0" max="100"
+        <span>Rich</span>
+    </fieldset>
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        </label>Email</label>:
+        <input type="Email" name="Email" id="Email"><br>
+        <label> Mobile:</label>
+        <input type="tel" name="Mobile" id="Mobile"><br>
+        <label> Address:</label>
+        <textarea name="Address" id="Address" row="3" cols="10"></textarea><br>
+        <label>Method to contact you:</label>
+        <input type="checkbox" name="social" value="Email"Email>
+        <label>Email</label>
+        <input type="checkbox" name="social" value="Whatsapp"Whatsapp>
+        <label>Whatsapp</label>
+        <input type="checkbox" name="social" value="chat"In-app chat>
+        <label>In-app chat</label>
+    </fieldset>
+    <input type="submit" value="Submit">
+    </form>
