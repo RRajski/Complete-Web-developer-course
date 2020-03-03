@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+    <style>
+        body {
+            padding: 5em;
+        }
+        hr {
+            margin: 5em 0;
+            }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+    // $("#btn1").click(function(){
+    // $("p").append(" <b>Appended text</b>.");
+    // });
+
+    $("#append-to-ul").click(function(){
+    $("#append-to-me").append("<li>Appended item</li>");
+    });
+    });
+    </script>
+</head>
+
+<body>
+
+        <button id="change-bg-color" type="button" onclick="myFunction()">
+            Change the background color
+        </button>
+
+<hr />
+
+        <button id="append-to-ul">Append to the ul</button>
+        <ul id="append-to-me"></ul>
+
+<hr />
+
+        <h1 id="message">Hello, World!</h1>
+
+<hr />
+        <h1>Change background color li through toggle on click</h1>
+
+        <ul id="hl-toggle">
+            <li>1</li>
+             <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+<hr />
+        <h1>Font Grow</h1>
+
+        <ul id="font-grow">
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+
+<hr />
+        <h1>Make all letters upper case</h1>
+
+        <input id="input">
+        <button id="upcase-name">Upper Case</button>
+        <p id="output"></p>
+
+<script src="js-practice.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+<!--<script src="main.js"></script>-->
+
+</body>
+</html>
